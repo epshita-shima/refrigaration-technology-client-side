@@ -30,7 +30,7 @@ const PromoteBest = () => {
                 <p className='font-semibold'>Professionally transition focused e-commerce whereas open-source niche markets. <br /> Proactively mesh sustainable internal or "organic" sources.</p>
             </div >
 
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:max-w-7xl mx-auto'>
                 {
                     promotes.map(promote => <Promote
                         key={promote._id}

@@ -4,7 +4,7 @@ const Faq = () => {
     return (
         <div className='mt-24'>
             <div div className='text-center mb-16' >
-                <h3 className='text-accent text-3xl font-bold uppercase mb-2'>Why we are best</h3>
+                <h3 className='text-accent text-3xl font-bold uppercase mb-2'>Query</h3>
                 <p className='font-semibold'>Professionally transition focused e-commerce whereas open-source niche markets. <br /> Proactively mesh sustainable internal or "organic" sources.</p>
             </div >
             <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-5 justify-center items-center px-24'>
