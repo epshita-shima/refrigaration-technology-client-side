@@ -56,7 +56,7 @@ const MyPortfolio = () => {
 
             <div className='mt-10 '>
                 <h2 className='text-accent text-3xl font-bold mb-6 border-b-2'>Skills</h2>
-                <p><strong>HTML5, CSS3, Bootstrap, Tailwind css, React Bootstrap, daisyUI, JavaScript, ES6, React.js, Node.js, Express.js, MongoDB, GitHub.</strong></p>
+                <p><strong>HTML5, CSS3, Bootstrap, Tailwind css, React Bootstrap, daisyUI, JavaScript, ES6, React.js, react firebase hooks, Firebase, Node.js, Express.js, MongoDB, GitHub.</strong></p>
             </div>
 
             <div className='mt-10'>
