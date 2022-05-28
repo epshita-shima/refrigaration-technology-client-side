@@ -7,7 +7,7 @@ const MyReview = () => {
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        const url = 'http://localhost:5000/review';
+        const url = 'https://infinite-escarpment-16952.herokuapp.com/review';
         fetch(url)
             .then(res => res.json())
             .then(data => setUSerReview(data));
@@ -28,7 +28,7 @@ const MyReview = () => {
             rating: event.target.num.value,
             reviewDescription: event.target.msg.value,
         }
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://infinite-escarpment-16952.herokuapp.com/reviews', {
             method: "POST",
             headers: {
                 "content-type": "application/json",

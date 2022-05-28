@@ -25,6 +25,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='service' element={<ServicePartsDetails></ServicePartsDetails>}></Route>
+        <Route path='/purchase' element={<RequireAuth><PurchaseParts></PurchaseParts></RequireAuth>}></Route>
         <Route path='/purchase/:purchaseId' element={<RequireAuth><PurchaseParts></PurchaseParts></RequireAuth>}></Route>
         <Route path='/portfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/blog' element={<Blogs></Blogs>}></Route>
@@ -39,8 +40,9 @@ function App() {
           <Route path='dasprofile' element={<DashBoardProfile></DashBoardProfile>}></Route>
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-      <NotFound></NotFound>
+
       <Footer></Footer>
 
       <ToastContainer />

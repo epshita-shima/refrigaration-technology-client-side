@@ -13,7 +13,7 @@ const PurchaseParts = () => {
 
     const [quantity, setQuantity] = useState(14);
     const [totalPrice, setTotalPrice] = useState()
-    const url = `http://localhost:5000/products/${purchaseId}`;
+    const url = `https://infinite-escarpment-16952.herokuapp.com/products/${purchaseId}`;
 
     useEffect(() => {
         fetch(url)
@@ -55,7 +55,7 @@ const PurchaseParts = () => {
             phone: event.target.phone.value,
         };
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://infinite-escarpment-16952.herokuapp.com/booking', {
             method: "POST",
             headers: {
                 "content-type": "application/json",

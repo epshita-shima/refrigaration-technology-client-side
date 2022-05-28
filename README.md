@@ -1,6 +1,6 @@
 # Refrigaration Technology
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project live link (https://refrigation-technology.web.app/).
 
 ## Project Details
 In this project showing some refrigarator parts of Refrigaration Technology. Showing this company product, business summary and other feature. Anyone can visit this website and showing the product details and purchase the product to login the website. User show therer profile, ordered product and review in dashboard.

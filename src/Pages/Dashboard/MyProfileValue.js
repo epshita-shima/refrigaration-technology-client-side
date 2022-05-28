@@ -8,7 +8,7 @@ const MyProfileValue = () => {
     const [user] = useAuthState(auth);
 
     useEffect(() => {
-        const url = 'http://localhost:5000/profile';
+        const url = 'https://infinite-escarpment-16952.herokuapp.com/profile';
         fetch(url)
             .then(res => res.json())
             .then(data => setUserProfile(data));
@@ -34,7 +34,7 @@ const MyProfileValue = () => {
             phone: event.target.num.value,
 
         }
-        fetch('http://localhost:5000/profile', {
+        fetch('https://infinite-escarpment-16952.herokuapp.com/profile', {
             method: "POST",
             headers: {
                 "content-type": "application/json",

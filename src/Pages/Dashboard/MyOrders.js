@@ -7,7 +7,7 @@ const MyOrders = () => {
     const [user] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?customer=${user.email}`)
+            fetch(`https://infinite-escarpment-16952.herokuapp.com/booking?customer=${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrders(data));
         }

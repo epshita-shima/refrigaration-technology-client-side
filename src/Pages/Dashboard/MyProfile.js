@@ -7,7 +7,7 @@ const MyProfile = () => {
     const [user] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/profile?email=${user.email}`)
+            fetch(`https://infinite-escarpment-16952.herokuapp.com/profile?email=${user.email}`)
                 .then(res => res.json())
                 .then(data => setProfile(data));
         }

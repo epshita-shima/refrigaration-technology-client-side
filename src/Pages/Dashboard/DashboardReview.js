@@ -8,7 +8,7 @@ const DashboardReview = () => {
     const [user] = useAuthState(auth);
     useEffect(() => {
         if (user) {
-            fetch('http://localhost:5000/review')
+            fetch('https://infinite-escarpment-16952.herokuapp.com/review')
                 .then(res => res.json())
                 .then(data => setUSerReview(data));
         }

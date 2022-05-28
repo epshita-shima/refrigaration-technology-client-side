@@ -11,25 +11,13 @@ const ServiceParts = () => {
     //     <Loading></Loading>
     // }
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://infinite-escarpment-16952.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
                 setParts(data);
             });
     }, [])
-
-    // const handlePurchase = id => {
-    //     const url = `http://localhost:5000/products/${id}`;
-
-    //     fetch(url, {
-    //         method: 'GET',
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setSingleParts(data)
-    //         })
-    // }
 
 
     return (
@@ -43,14 +31,10 @@ const ServiceParts = () => {
                     parts.map(part => <ServicePart
                         key={part._id}
                         part={part}
-                    // handlePurchase={handlePurchase}
 
                     ></ServicePart>)
                 }
-                {/* {
-                    singleParts && <PurchaseParts singleParts={singleParts}></PurchaseParts>
 
-                } */}
             </div>
         </div>
     );
