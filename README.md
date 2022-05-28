@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Refrigaration Technology
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Project Details
+In this project showing some refrigarator parts of Refrigaration Technology. Showing this company product, business summary and other feature. Anyone can visit this website and showing the product details and purchase the product to login the website. User show therer profile, ordered product and review in dashboard.
+
+## Techonology Use
+
+* react router
+* firebase console
+* react firebase hooks
+* react hook form
+* react toastify
+* recharts
 
 ## Available Scripts
 
