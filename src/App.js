@@ -16,6 +16,7 @@ import DashboardReview from './Pages/Dashboard/DashboardReview';
 import DashBoardProfile from './Pages/Dashboard/DashBoardProfile';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NotFound from './Pages/Shared/NotFound';
 
 function App() {
   return (
@@ -39,7 +40,9 @@ function App() {
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
+      <NotFound></NotFound>
       <Footer></Footer>
+
       <ToastContainer />
     </div>
   );

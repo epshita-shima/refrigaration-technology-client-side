@@ -37,6 +37,10 @@ const Blogs = () => {
                 <h2 className='text-3xl font-bold text-accent mb-2'> What is a unit test? Why should write unit tests?</h2>
                 <p>Unit tests are typically automated tests written and run by software developers to ensure that a section of an application (known as the "unit") meets its design and behaves as intended. In procedural programming, a unit could be an entire module, but it is more commonly an individual function or procedure.</p>
             </div>
+            <div className='border rounded-md p-10 mt-10'>
+                <h2 className='text-3xl font-bold text-accent mb-2'> Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts</h2>
+                <p>basically use this [...] then i don't change the state value thn state will be not work for it. When i use setProducts then they give me a function then i chang the value of state and this function give some value then you use it when reload the page then state value is initial level like default value or when i use [...] then state value not set .</p>
+            </div>
         </div>
     );
 };
