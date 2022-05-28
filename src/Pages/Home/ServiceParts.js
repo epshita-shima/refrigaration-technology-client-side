@@ -1,17 +1,37 @@
 import React, { useEffect, useState } from 'react';
+import PurchaseParts from '../PurchaseParts/PurchaseParts';
+import Loading from '../Shared/Loading';
 import ServicePart from './ServicePart';
 
 const ServiceParts = () => {
     const [parts, setParts] = useState([]);
+    // const [singleParts, setSingleParts, loading] = useState(null);
 
+    // if (loading) {
+    //     <Loading></Loading>
+    // }
     useEffect(() => {
-        fetch('serviceparts.json')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
                 setParts(data);
             });
     }, [])
+
+    // const handlePurchase = id => {
+    //     const url = `http://localhost:5000/products/${id}`;
+
+    //     fetch(url, {
+    //         method: 'GET',
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setSingleParts(data)
+    //         })
+    // }
+
+
     return (
         <div >
             <div className='text-center mb-16 mt-24'>
@@ -23,8 +43,14 @@ const ServiceParts = () => {
                     parts.map(part => <ServicePart
                         key={part._id}
                         part={part}
+                    // handlePurchase={handlePurchase}
+
                     ></ServicePart>)
                 }
+                {/* {
+                    singleParts && <PurchaseParts singleParts={singleParts}></PurchaseParts>
+
+                } */}
             </div>
         </div>
     );
