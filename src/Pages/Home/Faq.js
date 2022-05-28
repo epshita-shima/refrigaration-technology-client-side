@@ -1,4 +1,5 @@
 import React from 'react';
+import faq from './Faq.css';
 
 const Faq = () => {
     return (
@@ -51,7 +52,7 @@ const Faq = () => {
                     </div>
                 </div>
                 <div className='px-16'>
-                    <img src="https://media.istockphoto.com/vectors/question-mark-icon-flat-vector-illustration-design-vector-id1162198273?k=20&m=1162198273&s=612x612&w=0&h=s_5DDSXgMDkGq0sVqYpgD2AL1CuB9oK5UtmvMq6XBo8=" alt="" />
+                    <img className='faq-img' src="https://media.istockphoto.com/vectors/question-mark-icon-flat-vector-illustration-design-vector-id1162198273?k=20&m=1162198273&s=612x612&w=0&h=s_5DDSXgMDkGq0sVqYpgD2AL1CuB9oK5UtmvMq6XBo8=" alt="" />
                 </div>
             </div>
         </div>
